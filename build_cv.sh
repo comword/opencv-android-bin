@@ -3,7 +3,9 @@ export ANDROID_NDK="$ANDROID_NDK"
 export ANDROID_SDK_ROOT="$ANDROID_SDK_ROOT"
 export OPENCV_ROOT="$OPENCV_ROOT"
 
-CMAKE_ARGS="-DNATIVE_API_LEVEL=21 \
+CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
+            -DGRADLE_VERSION=6.8 \
+            -DNATIVE_API_LEVEL=21 \
             -DBUILD_ANDROID_EXAMPLES=0 \
             -DBUILD_ANDROID_PACKAGE=0 \
             -DBUILD_DOCS=0 \
@@ -32,9 +34,9 @@ CMAKE_ARGS="-DNATIVE_API_LEVEL=21 \
             -DBUILD_opencv_gapi=0 \
             -DBUILD_opencv_gpu=0 \
             -DBUILD_opencv_highgui=0 \
-            -DBUILD_opencv_imgcodecs=0 \
+            -DBUILD_opencv_imgcodecs=1 \
             -DBUILD_opencv_imgproc=1 \
-            -DBUILD_opencv_java=0 \
+            -DBUILD_opencv_java=1 \
             -DBUILD_opencv_legacy=0 \
             -DBUILD_opencv_ml=0 \
             -DBUILD_opencv_nonfree=0 \
@@ -45,8 +47,7 @@ CMAKE_ARGS="-DNATIVE_API_LEVEL=21 \
             -DBUILD_opencv_superres=0 \
             -DBUILD_opencv_ts=0 \
             -DBUILD_opencv_video=0 \
-            -DBUILD_opencv_videoio=0 \
-            -DBUILD_opencv_videostab=0 \
+            -DBUILD_opencv_videoio=1 \
             -DBUILD_opencv_world=0 \
             -DWITH_CUBLAS=0 \
             -DWITH_CUDA=0 \
