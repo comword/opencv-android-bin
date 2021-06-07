@@ -30,6 +30,7 @@ CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DBUILD_opencv_contrib=0 \
             -DBUILD_opencv_core=1 \
             -DBUILD_opencv_dnn=0 \
+            -DBUILD_opencv_face=1 \
             -DBUILD_opencv_features2d=1 \
             -DBUILD_opencv_flann=1 \
             -DBUILD_opencv_gapi=0 \
@@ -43,7 +44,7 @@ CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DBUILD_opencv_nonfree=0 \
             -DBUILD_opencv_objdetect=1 \
             -DBUILD_opencv_ocl=0 \
-            -DBUILD_opencv_photo=0 \
+            -DBUILD_opencv_photo=1 \
             -DBUILD_opencv_stitching=0 \
             -DBUILD_opencv_superres=0 \
             -DBUILD_opencv_ts=0 \
@@ -57,7 +58,7 @@ CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DWITH_IPP=0 \
             -DWITH_JASPER=0 \
             -DWITH_JPEG=0 \
-            -DWITH_OPENCL=0 \
+            -DWITH_OPENCL=1 \
             -DWITH_OPENEXR=0 \
             -DWITH_OPENMP=0 \
             -DWITH_PNG=0 \

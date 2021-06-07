@@ -99,7 +99,7 @@
 /* #undef HAVE_NVCUVENC */
 
 /* OpenCL Support */
-/* #undef HAVE_OPENCL */
+#define HAVE_OPENCL
 /* #undef HAVE_OPENCL_STATIC */
 /* #undef HAVE_OPENCL_SVM */
 

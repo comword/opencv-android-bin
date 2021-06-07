@@ -10,9 +10,9 @@ Built for arm64-v8a and x86_64
 
 --   OpenCV modules:
 
---     To be built:                 calib3d core features2d flann imgcodecs imgproc java objdetect videoio
+--     To be built:                 calib3d core face features2d flann imgcodecs imgproc java objdetect photo videoio
 
---     Disabled:                    dnn gapi highgui ml photo stitching video world
+--     Disabled:                    dnn gapi highgui ml stitching video world
 
 --     Disabled by dependency:      -
 
