@@ -19,7 +19,7 @@ CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DBUILD_PERF_TESTS=0 \
             -DBUILD_PNG=0 \
             -DBUILD_SHARED_LIBS=1 \
-            -DBUILD_TBB=0 \
+            -DBUILD_TBB=1 \
             -DBUILD_TESTS=0 \
             -DBUILD_TIFF=0 \
             -DBUILD_WITH_DEBUG_INFO=0 \
@@ -62,7 +62,7 @@ CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DWITH_OPENEXR=0 \
             -DWITH_OPENMP=0 \
             -DWITH_PNG=0 \
-            -DWITH_TBB=0 \
+            -DWITH_TBB=1 \
             -DWITH_TIFF=0"
 
 function build_opencv {
