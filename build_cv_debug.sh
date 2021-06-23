@@ -3,7 +3,8 @@ export ANDROID_NDK="$ANDROID_NDK"
 export ANDROID_SDK_ROOT="$ANDROID_SDK_ROOT"
 export OPENCV_ROOT="$OPENCV_ROOT"
 
-CMAKE_ARGS="-DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
+CMAKE_ARGS="-DANDROID_STL=c++_shared \
+            -DANDROID_GRADLE_PLUGIN_VERSION=4.1.0 \
             -DGRADLE_VERSION=6.8 \
             -DNATIVE_API_LEVEL=24 \
             -DANDROID_NATIVE_API_LEVEL=24 \
@@ -72,7 +73,7 @@ function build_opencv {
   echo "OPENCV_ROOT $OPENCV_ROOT"
   pushd $OPENCV_ROOT
 
-  echo "Building Opencv for $ABI"
+  echo "Building OpenCV for $ABI"
   mkdir build_$ABI
   pushd build_$ABI
 
